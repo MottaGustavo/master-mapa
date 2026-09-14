@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa do Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- TROQUE O 'logo.png' PELO NOME DO ARQUIVO DA SUA LOGO -->
+        <img src="img/LogoMasterHorizontal.png" alt="Logo Shopping" class="logo-shopping">
+    </header>
+
+    <main>
+        <div class="map-container" id="mapaContainer">
+            <!-- TROQUE O 'mapa-piso1.jpg' PELO SEU ARQUIVO DO MAPA -->
+            <img src="img/mapaMaster14.09.svg" alt="Mapa do Shopping" id="mapaImg">
+        </div>
+
+        <div class="zoom-controls">
+            <button class="zoom-btn" onclick="alterarZoom(0.2)">+</button>
+            <button class="zoom-btn" onclick="alterarZoom(-0.2)">-</button>
+        </div>
+
+        <div class="action-zone">
+            <!-- TROQUE O 'mapa.pdf' PELO SEU ARQUIVO PDF -->
+            <a href="https://drive.google.com/file/d/1ixAA5pXvtqP_RSq-LRlQW34vTu4faYvI/view?usp=drive_link" target="_blank" class="download-button">
+                <img src="img/iconeDownload.png" alt="Download Icon" class="download-icon">
+                Baixar Mapa em PDF
+            </a>                            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
